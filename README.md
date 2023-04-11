@@ -1,3 +1,3 @@
 # Port-Scanner
-scans network for open ports and services
-
+Usage: scans network for open ports and services
+Syntax: python3 scanner.py <ip>
