@@ -22,7 +22,7 @@ print("Time started: "+str(datetime.now()))
 print("-" * 50)
 
 try:
-	for port in range(50,5000):
+	for port in range(50,85):
 		s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 		socket.setdefaulttimeout(1)
 		result = s.connect_ex((target,port))
@@ -36,7 +36,7 @@ except KeyboardInterrupt:
 
 except socket.gaierror:
 	print("Hostname could not be resolved.")
-	sys.exit
+	sys.exit()
 
 except socket.error:
 	print("Could not connect to the server.")
