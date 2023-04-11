@@ -1,3 +1,3 @@
 # Port-Scanner
-scans network and listens to open ports
+scans network for open ports and services
 
