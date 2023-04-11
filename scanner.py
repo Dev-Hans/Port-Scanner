@@ -12,17 +12,17 @@ else:
 	print("Invalid amount of arguments.")
 	print("Syntax: python3 scanner.py <ip>")
 #banner
-print("-" * 50)
-print(pyfiglet.figlet_format("0xHans", font="slant"))
-print("-" * 50)
-print("This is 0xh.1337's PORT SCANNER")
-print("-" * 50)
+print("-" * 80)
+print(pyfiglet.figlet_format("poFlash", font="slant"))
+print("-" * 80)
+print("This port scanner is built by 0xHans")
+print("-" * 80)
 print("Scanning target: "+target)
 print("Time started: "+str(datetime.now()))
-print("-" * 50)
+print("-" * 80)
 
 try:
-	for port in range(50,85):
+	for port in range(0,1023):
 		s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 		socket.setdefaulttimeout(1)
 		result = s.connect_ex((target,port))
