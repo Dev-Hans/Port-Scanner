@@ -1,4 +1,3 @@
-# poFlash
-Usage: scans network for open ports and services
+Usage: Scans network for open ports and services.
 
 Syntax: python3 scanner.py [target ip]
